@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background-color: hsl(0deg 0% 96%);
+    height: 3000px;
+}
+
+.offer {
+    display: flex;
+    background-color: hsl(207deg 90% 54%);
+    height: 46px;
+    width: 116px;
+    align-items: center;
+    color: white;
+    padding-left: 10px;
+    font-weight: bold;
+    right: 207px;
+    top: 10px;
+    position: absolute;
+}
+
+.offer::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 23px;
+    border-color: transparent hsl(0deg 0% 96%) transparent transparent;
+    background-color: transparent;
+    right: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 100px;
+}
+
+.card {
+    width: 420px;
+    height: 800px;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.red {
+    background-color:   hsl(4deg 90% 58%);
+}
+
+.blue {
+    background-color: hsl(207deg 90% 54%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 740px;
+    /* margin: 0 15px; */
+}
+
+.content div {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(99 99 99 / 10%);
+    padding: 0 15px;
+
+}
+
+
+.feturs {
+    margin-left: 10px;
+}
+
+.box {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+
+.right {
+    background-color: hsl(174deg 100% 29%);
+
+}
+
+.wrong {
+    background-color: hsl(340deg 82% 52%);
+}
+
+#sp {
+    position: relative;
+}
+
+#sp::before{
+    display: flex;
+    content: "\003F";
+    right: 15px;
+    position: absolute;
+    color: white;
+    background-color: hsl(0deg 0% 49%);
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
